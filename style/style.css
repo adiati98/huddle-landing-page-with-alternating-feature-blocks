@@ -1,0 +1,596 @@
+:root {
+	/* Primary */
+	--pink: hsl(322, 100%, 66%);
+
+	/* Neutral */
+	--very-pale-cyan: hsl(193, 100%, 96%);
+	--very-dark-cyan: hsl(192, 100%, 9%);
+	--grayish-blue: hsl(208, 11%, 55%);
+
+	/* Headings */
+	--headings: 'Poppins', sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: var(--very-dark-cyan);
+}
+
+/* General */
+
+h2 {
+	margin-bottom: 25px;
+	font-size: 1.8rem;
+}
+
+p {
+	color: var(--grayish-blue);
+	font-size: 1rem;
+}
+
+button {
+	background-color: var(--pink);
+	color: var(--very-pale-cyan);
+	border: none;
+	border-radius: 20px;
+	padding: 0.8rem;
+	margin-bottom: 50px;
+	outline: none;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: var(--very-pale-cyan);
+}
+
+ul {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+button a {
+	font-size: 0.9rem;
+}
+
+button:hover {
+	background-color: var(--very-dark-cyan);
+	color: var(--very-pale-cyan);
+	transition: 0.3s;
+}
+
+/* Hero */
+
+.hero {
+	background-image: url(/images/bg-hero-mobile.svg);
+	background-color: var(--very-pale-cyan);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	width: 100%;
+	padding: 0 1rem;
+}
+
+nav {
+	display: flex;
+	padding-top: 30px;
+}
+
+.push {
+	margin-left: auto;
+	background-color: #ffffff;
+	font-weight: bold;
+	box-shadow: 3px 3px 5px var(--very-dark-cyan);
+}
+
+.push a {
+	color: var(--very-dark-cyan);
+}
+
+.push a:hover {
+	color: var(--very-pale-cyan);
+	transition: 0.3ms;
+}
+
+.logo {
+	width: 180px;
+	height: 35px;
+	margin-top: 0.5rem;
+}
+
+main {
+	margin-top: 80px;
+	text-align: center;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 1.7rem;
+	margin-bottom: 20px;
+}
+
+main p {
+	font-size: 1rem;
+	margin-bottom: 25px;
+}
+
+.mockup {
+	width: 85vw;
+}
+
+/* Benefits */
+
+.benefits {
+	margin-top: 60px;
+	padding: 0 1rem;
+	text-align: center;
+}
+
+.illustration {
+	width: 85%;
+	margin-top: 70px;
+}
+
+.grid-3 {
+	display: grid;
+	grid-gap: 50px;
+}
+
+/* Build Community */
+
+.build-community {
+	width: 80vw;
+	height: 25vh;
+	background-color: #ffffff;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 3px 3px 10px var(--very-dark-cyan);
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.build-community h2 {
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+
+.build-community button {
+	margin-bottom: 0;
+}
+
+/* Footer */
+
+footer {
+	padding: 1rem;
+	background-color: var(--very-dark-cyan);
+	margin-top: 120px;
+	position: relative;
+	color: var(--grayish-blue);
+}
+
+.logo-white {
+	margin-top: 120px;
+}
+
+.left {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	line-height: 2;
+	margin-top: 50px;
+}
+
+.left div {
+	display: flex;
+	flex-direction: row;
+	justify-content: baseline;
+	margin-top: 20px;
+}
+
+.left div p {
+	margin-left: 25px;
+	margin-top: -5px;
+}
+
+.left-icon {
+	font-size: 1.7rem;
+}
+
+.center {
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: 1fr;
+	line-height: 2;
+}
+
+.service a:hover {
+	background-color: var(--pink);
+	color: var(--very-pale-cyan);
+	padding: 0.2rem;
+	font-weight: 700;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.service-2 {
+	margin-top: 0;
+}
+
+.right {
+	margin-top: 70px;
+	line-height: 2;
+	text-align: center;
+}
+
+.med-soc {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.med-soc a:hover {
+	color: var(--pink);
+}
+
+.icon {
+	font-size: 1.5rem;
+	border: 1px solid var(--very-pale-cyan);
+	border-radius: 50%;
+	padding: 1rem;
+}
+
+.icon:hover {
+	border: 1px solid var(--pink);
+	box-shadow: 1px 2px 5px #ffffff;
+	transition: 0.3s;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+	color: var(--pink);
+}
+
+/* Screen 481px to 767px */
+
+@media (min-width: 481px) and (max-width: 767px) {
+	/* General */
+
+	button {
+		width: 35vw;
+	}
+
+	button a {
+		font-size: 1rem;
+	}
+
+	/* Hero */
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	main p {
+		padding: 0.5rem 2rem;
+		font-size: 1rem;
+	}
+
+	/* Benefits */
+
+	.benefits {
+		margin: 0 auto;
+		margin-left: 1rem;
+		align-items: center;
+	}
+
+	.illustration {
+		width: 80vw;
+		margin-top: 70px;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.left-side {
+		margin-top: 100px;
+		margin-right: 35px;
+	}
+
+	.build-community {
+		height: 27vh;
+		padding: 1.2rem;
+	}
+
+	.build-community h2 {
+		font-size: 1.3rem;
+		margin-bottom: 22px;
+	}
+
+	.build-community button {
+		width: 50vw;
+		margin-bottom: 0;
+	}
+
+	/* Footer */
+
+	footer {
+		margin-top: 140px;
+	}
+
+	.logo-white {
+		margin-top: 150px;
+		width: 250px;
+		height: 45px;
+	}
+
+	.center {
+		line-height: 2.5;
+	}
+
+	.med-soc {
+		margin-bottom: 25px;
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+
+	.attribution {
+		font-size: 13px;
+	}
+}
+/* 768px to 1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+	/* Global */
+
+	button {
+		width: 35vw;
+		font-size: 1rem;
+	}
+
+	/* Hero */
+
+	.push {
+		width: 200px;
+	}
+
+	.logo {
+		width: 250px;
+		height: 50px;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	main p {
+		font-size: 1rem;
+	}
+
+	/* Benefits */
+
+	.illustration {
+		width: 40vw;
+		margin-top: 70px;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.left-side {
+		margin-top: 100px;
+		margin-right: 35px;
+	}
+
+	.build-community {
+		width: 80vw;
+		height: 27vh;
+		padding: 2rem;
+	}
+
+	.build-community h2 {
+		margin-top: 15px;
+		font-size: 1.5rem;
+		margin-bottom: 22px;
+	}
+
+	.build-community button {
+		margin-bottom: 0;
+	}
+
+	/* Footer */
+
+	footer {
+		margin-top: 150px;
+	}
+
+	.logo-white {
+		margin-top: 150px;
+		width: 250px;
+		height: 45px;
+	}
+
+	.center {
+		line-height: 2.5;
+	}
+
+	.med-soc {
+		margin-bottom: 25px;
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+
+	.attribution {
+		font-size: 13px;
+	}
+}
+
+/* 1024px to 1440px */
+
+@media (min-width: 1024px) {
+	/* General */
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	button {
+		width: 270px;
+		height: 70px;
+	}
+
+	button a {
+		font-size: 1.2rem;
+	}
+
+	/* Hero */
+
+	.hero {
+		background-image: url(/images/bg-hero-desktop.svg);
+	}
+
+	.logo {
+		width: 300px;
+		height: 50px;
+	}
+
+	.push {
+		width: 250px;
+		height: 50px;
+	}
+
+	.push a {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	main p {
+		margin: 2rem 3rem;
+		font-size: 1.2rem;
+	}
+
+	/* Benefits */
+
+	.illustration {
+		width: 50vw;
+		margin-top: 70px;
+	}
+
+	.card {
+		margin: 0 1.5rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.card p {
+		font-size: 1.2rem;
+	}
+
+	.switch {
+		flex-direction: row-reverse;
+	}
+
+	.left-side {
+		width: 40vw;
+		align-items: center;
+		margin: auto;
+	}
+
+	.illustration {
+		width: 40vw;
+	}
+
+	.build-community {
+		width: 65vw;
+		height: 35vh;
+		margin-top: 130px;
+		padding: 3rem;
+	}
+
+	.build-community h2 {
+		font-size: 1.8rem;
+		margin-bottom: 22px;
+	}
+
+	/* Footer */
+
+	footer {
+		margin-top: 250px;
+	}
+
+	.logo-white {
+		margin-top: 200px;
+		margin-left: 1.5rem;
+	}
+
+	.flex-footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.left {
+		width: 30vw;
+		margin-left: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.service {
+		display: grid;
+	}
+
+	.service-2 {
+		margin-top: 0;
+	}
+
+	.icon {
+		display: flex;
+		justify-content: space-between;
+		margin-right: 10px;
+	}
+
+	.attribution {
+		margin-left: 55px;
+		margin-top: 50px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+}
