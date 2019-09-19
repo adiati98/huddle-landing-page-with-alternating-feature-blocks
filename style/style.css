@@ -152,7 +152,7 @@ main p {
 
 .build-community {
 	width: 80vw;
-	max-height: 25vmax;
+	max-height: 30vmax;
 	background-color: #ffffff;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -169,6 +169,10 @@ main p {
 .build-community h2 {
 	font-size: 1.2rem;
 	margin-bottom: 15px;
+}
+
+.build-community button {
+	margin-bottom: 1rem;
 }
 
 /* Footer */
@@ -414,7 +418,6 @@ footer {
 
 	.build-community h2 {
 		font-size: 1.5rem;
-		margin-bottom: 22px;
 		margin-top: 15px;
 	}
 
@@ -535,7 +538,6 @@ footer {
 
 	.build-community h2 {
 		font-size: 1.8rem;
-		margin-bottom: 22px;
 	}
 
 	/* Footer */
